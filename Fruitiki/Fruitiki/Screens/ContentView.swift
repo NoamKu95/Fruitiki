@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var fruitsList: [Fruit] = fruitsData
+    @State private var isSettingsOpen: Bool = false
     
     func refreshListOrder() {
         fruitsList = fruitsList.shuffled()
@@ -29,6 +30,16 @@ struct ContentView: View {
             .refreshable {
                 refreshListOrder()
             }
+            .navigationBarItems(
+                trailing:
+                    Button(action: {
+                        isSettingsOpen = true
+                    }) {
+                        Image(systemName: "slider.horizontal.3")
+                    }
+                    .sheet(isPresented: $isSettingsOpen) {
+                        Settings()
+                    })
             .navigationTitle("Fruits")
         }
     }

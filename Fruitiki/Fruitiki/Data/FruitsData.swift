@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let nutritionsTitles: [String] = ["Energy", "Sugar", "Fat", "Protein", "Vitamins", "Minerals"]
+
 let fruitsData: [Fruit] = [
     Fruit(
         fruitName: "Blueberry",

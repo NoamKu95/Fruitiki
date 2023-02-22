@@ -36,7 +36,7 @@ struct FruitDetails: View {
                             .font(.headline)
                             .multilineTextAlignment(.leading)
                         
-                        // nutrients
+                        NutrientsView(titles: nutritionsTitles, values: displayedFruit.nutrition, titlesColor: getColorForMainTitle())
                         
                         Text(getSubHeadlineText())
                             .fontWeight(.bold)
