@@ -11,15 +11,6 @@ struct OnboardingCardView: View {
     
     @State private var isAnimating: Bool = false
     var displayedFruit: Fruit
-//    @State var fruitName: String
-//    @State var imageName: String
-//    @State var fruitDescription: String
-    
-    func generateGradientColors() -> [Color] {
-        let firstColor = "Color" + displayedFruit.fruitName + "Light"
-        let secondColor = "Color" + displayedFruit.fruitName + "Dark"
-        return [Color(firstColor), Color(secondColor)]
-    }
     
     var body: some View {
         ZStack {
@@ -52,7 +43,7 @@ struct OnboardingCardView: View {
             }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-        .background(LinearGradient(gradient: Gradient(colors: generateGradientColors()), startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(gradient: Gradient(colors: generateGradientColors(using: displayedFruit.fruitName)), startPoint: .top, endPoint: .bottom))
         .cornerRadius(20)
         .padding(.horizontal, 20)
     }

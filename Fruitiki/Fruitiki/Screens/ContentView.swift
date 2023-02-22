@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var fruitsList: [Fruit] = fruitsData
+    
+    func refreshListOrder() {
+        fruitsList = fruitsList.shuffled()
+    }
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(fruitsList.shuffled()) { item in
+                    NavigationLink(destination: FruitDetails(displayedFruit: item)) {
+                        FruitRowView(fruit: item)
+                            .padding(.vertical, 4)
+                    }
+                    
+                }
+            }
+            .refreshable {
+                refreshListOrder()
+            }
+            .navigationTitle("Fruits")
         }
-        .padding()
     }
 }
 
