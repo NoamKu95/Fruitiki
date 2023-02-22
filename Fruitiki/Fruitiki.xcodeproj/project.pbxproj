@@ -23,6 +23,7 @@
 		43A18ADF29A6617B0060B5F8 /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A18ADE29A6617B0060B5F8 /* SourceLinkView.swift */; };
 		43A18AE129A675370060B5F8 /* NutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A18AE029A675370060B5F8 /* NutrientsView.swift */; };
 		43A18AE329A6804D0060B5F8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A18AE229A6804D0060B5F8 /* Settings.swift */; };
+		43A18AE729A689040060B5F8 /* SettingsGroupTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A18AE629A689040060B5F8 /* SettingsGroupTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		43A18ADE29A6617B0060B5F8 /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
 		43A18AE029A675370060B5F8 /* NutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsView.swift; sourceTree = "<group>"; };
 		43A18AE229A6804D0060B5F8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		43A18AE629A689040060B5F8 /* SettingsGroupTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGroupTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				43A18ADC29A65B430060B5F8 /* FruitHeaderView.swift */,
 				43A18ADE29A6617B0060B5F8 /* SourceLinkView.swift */,
 				43A18AE029A675370060B5F8 /* NutrientsView.swift */,
+				43A18AE629A689040060B5F8 /* SettingsGroupTitleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A18AE129A675370060B5F8 /* NutrientsView.swift in Sources */,
+				43A18AE729A689040060B5F8 /* SettingsGroupTitleView.swift in Sources */,
 				43A18ACB29A60DA80060B5F8 /* OnboardingCardView.swift in Sources */,
 				43A18ABC29A6093F0060B5F8 /* ContentView.swift in Sources */,
 				43A18AD629A64E520060B5F8 /* FruitRowView.swift in Sources */,

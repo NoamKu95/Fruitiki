@@ -19,21 +19,34 @@ struct Settings: View {
                     // section 1
                     GroupBox(
                         label:
-                            HStack {
-                                Text("Fuitiki".uppercased())
-                                    .fontWeight(.bold)
-                                
-                                Spacer()
-                                
-                                Image(systemName: "info.circle")
-                            }
+                            SettingsGroupTitleView(titleText: "Fruitiki", titleIconName: "info.circle")
                     ){
-                        Text("Hi sexy")
+                        Divider().padding(.vertical, 4)
+                        HStack (alignment: .center, spacing: 10) {
+                            Image("logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(9)
+                            Spacer()
+                            Text("Most fruits are naturally low in fat, sodium, and calories. None have cholesterol. Fruits are sources of many essential nutrients, including potassioum, dietary, fiber, vitamins and much more.")
+                                .font(.footnote)
+                        }
                     }
                     
                     // section 2
+                    GroupBox(
+                        label:
+                            SettingsGroupTitleView(titleText: "customization", titleIconName: "paintbrush")
+                    ){
+                        Divider().padding(.vertical, 4)
+                        HStack (alignment: .center, spacing: 10) {
+                            
+                        }
+                    }
                     
                 }
+                .padding(.horizontal, 16)
                 .navigationBarTitle("Settings", displayMode: .large)
                 .navigationBarItems(
                     trailing:
