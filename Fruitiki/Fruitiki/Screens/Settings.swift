@@ -37,12 +37,14 @@ struct Settings: View {
                     // section 2
                     GroupBox(
                         label:
-                            SettingsGroupTitleView(titleText: "customization", titleIconName: "paintbrush")
+                            SettingsGroupTitleView(titleText: "Application", titleIconName: "apps.iphone")
                     ){
-                        Divider().padding(.vertical, 4)
-                        HStack (alignment: .center, spacing: 10) {
-                            
-                        }
+                        SettingsAppRowView(title: "Developer", content: "Noam Kurtzer")
+                        SettingsAppRowView(title: "Designer", content: "Robert Petras")
+                        SettingsAppRowView(title: "Website", linkLabel: "My website", linkDestination: "noamkurtzer.co.il")
+                        SettingsAppRowView(title: "Compatability", content: "iOS 14 +")
+                        SettingsAppRowView(title: "SwiftUI version", content: "2.0")
+                        SettingsAppRowView(title: "App version", content: "1.0.1")
                     }
                     
                 }

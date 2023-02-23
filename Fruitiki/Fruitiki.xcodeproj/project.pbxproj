@@ -24,6 +24,7 @@
 		43A18AE129A675370060B5F8 /* NutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A18AE029A675370060B5F8 /* NutrientsView.swift */; };
 		43A18AE329A6804D0060B5F8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A18AE229A6804D0060B5F8 /* Settings.swift */; };
 		43A18AE729A689040060B5F8 /* SettingsGroupTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A18AE629A689040060B5F8 /* SettingsGroupTitleView.swift */; };
+		43A18AEA29A76DCA0060B5F8 /* SettingsAppRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A18AE929A76DCA0060B5F8 /* SettingsAppRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		43A18AE029A675370060B5F8 /* NutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsView.swift; sourceTree = "<group>"; };
 		43A18AE229A6804D0060B5F8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		43A18AE629A689040060B5F8 /* SettingsGroupTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGroupTitleView.swift; sourceTree = "<group>"; };
+		43A18AE929A76DCA0060B5F8 /* SettingsAppRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +121,14 @@
 		43A18AC929A60D6E0060B5F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				43A18ACA29A60DA80060B5F8 /* OnboardingCardView.swift */,
-				43A18ACC29A612590060B5F8 /* StartButton.swift */,
+				43A18AED29A76E6C0060B5F8 /* Onboarding */,
+				43A18AEC29A76E330060B5F8 /* Details */,
+				43A18AEB29A76DEB0060B5F8 /* Home */,
+				43A18AE829A76DB50060B5F8 /* Settings */,
 				43A18AD529A64E520060B5F8 /* FruitRowView.swift */,
 				43A18ADC29A65B430060B5F8 /* FruitHeaderView.swift */,
 				43A18ADE29A6617B0060B5F8 /* SourceLinkView.swift */,
 				43A18AE029A675370060B5F8 /* NutrientsView.swift */,
-				43A18AE629A689040060B5F8 /* SettingsGroupTitleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +147,38 @@
 				43A18AD829A64F8D0060B5F8 /* ColorsUtil.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		43A18AE829A76DB50060B5F8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				43A18AE629A689040060B5F8 /* SettingsGroupTitleView.swift */,
+				43A18AE929A76DCA0060B5F8 /* SettingsAppRowView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		43A18AEB29A76DEB0060B5F8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		43A18AEC29A76E330060B5F8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		43A18AED29A76E6C0060B5F8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				43A18ACC29A612590060B5F8 /* StartButton.swift */,
+				43A18ACA29A60DA80060B5F8 /* OnboardingCardView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +259,7 @@
 				43A18AE329A6804D0060B5F8 /* Settings.swift in Sources */,
 				43A18ADB29A6550E0060B5F8 /* FruitDetails.swift in Sources */,
 				43A18ACF29A615E10060B5F8 /* Onboarding.swift in Sources */,
+				43A18AEA29A76DCA0060B5F8 /* SettingsAppRowView.swift in Sources */,
 				43A18ACD29A612590060B5F8 /* StartButton.swift in Sources */,
 				43A18AD429A618AF0060B5F8 /* FruitsData.swift in Sources */,
 				43A18ADD29A65B430060B5F8 /* FruitHeaderView.swift in Sources */,
