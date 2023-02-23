@@ -10,6 +10,7 @@ import SwiftUI
 struct Settings: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @AppStorage("seen_onboarding") var userSeenOnboarding: Bool = true
     
     var body: some View {
         NavigationView {
@@ -34,7 +35,34 @@ struct Settings: View {
                         }
                     }
                     
-                    // section 2
+                    GroupBox(
+                        label:
+                            SettingsGroupTitleView(titleText: "Customization", titleIconName: "brush")
+                    ){
+                        Divider().padding(.vertical, 4)
+                        
+                        Text("If you wish, you can restart the application by switching the toggle. This will start the onboarding process once again.")
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1) // make sure text will not be cut, give it all space it needs
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
+                        
+                        Toggle(isOn: Binding<Bool>(
+                            get: { !userSeenOnboarding },
+                            set: { userSeenOnboarding = !$0 }
+                        )) {
+                            Text("Restart".uppercased())
+                        }
+                        .padding()
+                        .background(
+                            Color(.tertiarySystemBackground)
+                                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                        )
+                         
+                    }
+                    
+                    
                     GroupBox(
                         label:
                             SettingsGroupTitleView(titleText: "Application", titleIconName: "apps.iphone")
